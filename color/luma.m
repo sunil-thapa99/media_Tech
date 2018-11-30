@@ -11,6 +11,7 @@ mycolorarray(1:180, 121:180, 3) = 255;
 figure(1), imshow(mycolorarray);    
 
 %Code 2 => Convert to grayscale
+% rgb2gray() calls this code
 mycolorarray = double(mycolorarray);
 mono_true_lum(:, :, 1)=0.3*mycolorarray(:, :, 1) + 0.59*mycolorarray(:, :, 2)+0.11*mycolorarray(:, :, 3);
 mono_true_lum(:, :, 2)=mono_true_lum(:,:,1);
